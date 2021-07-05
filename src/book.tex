@@ -1,5 +1,5 @@
-\documentclass[a4paper ,12pt]{report}
-\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\documentclass[12pt,twoside,openany,b5paper]{book}
+\usepackage[lmargin=25mm,rmargin=25mm,tmargin=27mm,bmargin=30mm]{geometry}
 \usepackage{cmap}
 \usepackage[T2A]{fontenc}
 \usepackage[english,main=russian]{babel}
@@ -7,15 +7,26 @@
 \usepackage{graphicx}
 \graphicspath{ {img/} }
 
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text-ms]{Piazzolla}
+
+
+\newcommand{\figp}[1]{
+  \begin{figure}
+  \begin{center}
+  \includegraphics[angle=90,width=\textwidth,height=\textheight,keepaspectratio]{#1}
+  \end{center}
+  \end{figure}
+}
+
 \begin{document}
 \title{Kogin Patterns}
 \author{Ольга Абросимова}
 \date{2021}
 \maketitle
 
-\begin{figure}[hbt!]
-\centering
-\end{figure}
+\figp{1}
 
+\figp{2}
 
 \end{document}
